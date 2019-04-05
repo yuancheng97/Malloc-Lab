@@ -1,0 +1,51 @@
+***********
+Main Files:
+***********
+
+mm.{c,h}	
+	Your solution malloc package. mm.c is the file that you
+	will be handing in, and is the only file you should modify.
+
+mdriver	
+	The malloc driver that tests your mm.c file
+
+traces
+	Directory containing trace files that test your implementation. 
+
+Makefile	
+	Builds the driver
+
+**********************************
+Other support files for the driver
+**********************************
+
+fsecs		Wrapper function for the different timer packages
+clock		Routines for accessing the Pentium and Alpha cycle counters
+fcyc		Timer functions based on cycle counters
+ftimer		Timer functions based on interval timers and gettimeofday()
+memlib		Models the heap and sbrk function
+
+*******************************
+Building and running the driver
+*******************************
+To build the driver, type "make" to the shell.
+
+To run the driver on the test traces:
+
+	unix> ./mdriver
+
+To run the driver on a particular test trace:
+
+        unix> ./mdriver -V -f [name of trace file].rep
+
+The -V option prints out helpful tracing and summary information.
+
+To get a list of the driver flags:
+
+	unix> mdriver -h
+
+To hand in your project, preview your grade, and see it on the 
+scoreboard, use:
+
+        unix> make
+        unix> make handin

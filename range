@@ -1,0 +1,9 @@
+#!/bin/bash
+
+i=0
+while [[ i -lt 10 ]]
+do
+    test=`./mdriver -V`
+    echo "$test"
+    i=$i+1
+done
